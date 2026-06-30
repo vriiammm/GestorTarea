@@ -1,15 +1,18 @@
 nav {
-    width: 100%;
+   width: auto;
     height: 100%;
 }
 .botonera-contenidos{
     flex: 1;
-    background-color: #121F38;
+   background-color: #1e1e24; /* Color de fondo oscuro y moderno */
     border-radius: 15px;
     box-shadow:
     0 8px 24px rgba(0,0,0,.35),
     inset 0 1px 0 rgba(255,255,255,.05);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    
+    
+   
 }

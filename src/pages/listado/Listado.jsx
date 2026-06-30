@@ -7,7 +7,7 @@ export default function Listado({ tareas, eliminar, cambiarEstado }) {
       <p className="subtitulo">Tareas</p>
       <div className="listado">
         {tareas.length === 0 ? (
-          <p className="no-tareas">No hay tareas pendientes. ¡Buen trabajo!</p>
+          <p className="no-tareas">No hay tareas pendientes.</p>
         ) : (
           tareas.map((tarea) => (
             <Tarjeta

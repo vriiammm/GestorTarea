@@ -8,15 +8,7 @@ export default function CrearTarea({ guardar }) {
 
     const id = new Date().getTime();
 
-    //tipoUrgencia:
-    //  "1" = No urgente.
-    //  "2" = Urgente.
-    //  "3" = Muy urgente.
 
-    //estado:
-    // "1" = "Pendente" default
-    // "2" = "En proceso"
-    // "3" = "Finalizado"
 
     const estado = "1";
     guardar({ ...tarea, estado, id });
@@ -31,7 +23,6 @@ export default function CrearTarea({ guardar }) {
           <label>Titulo</label>
           <input
             type="text"
-            placeholder="ej: Pagar la luz"
             onChange={(e) => setDatoTarea("titulo", e.target.value)}
             value={tarea.titulo}
             required
@@ -75,7 +66,6 @@ export default function CrearTarea({ guardar }) {
           <label>Descripcion</label>
           <textarea
             type="text"
-            placeholder="máx. 600 caracteres"
             maxLength={600}
             cols="4"
             onChange={(e) => setDatoTarea("info", e.target.value)}
@@ -85,7 +75,6 @@ export default function CrearTarea({ guardar }) {
         </div>
 
         <button className="submitButton" type="submit">
-          <img src="./iconoCrearTarea.png" alt="icono boton" />
           Crear tarea
         </button>
       </form>

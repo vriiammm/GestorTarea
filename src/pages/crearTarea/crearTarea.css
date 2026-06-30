@@ -1,9 +1,9 @@
 .formulario {
-    animation: aparecer 0.8s;
+    
     display: flex;
     justify-content: start;
     align-items: center;
-    background-color: #a58fcf;
+    background-color: #1d0e41;
     box-shadow:
         0 8px 24px #00000059,
         inset 0 1px 0 #ffffff0d;
@@ -72,8 +72,8 @@ textarea::placeholder {
     align-items: center;
     width: 250px;
     border-radius: 8px;
-    background-color: #1a6ef5;
-    box-shadow: inset -90px 0px 60px #7C3AED;
+    background-color: #949494;
+   color: black;
     cursor: pointer;
     transition: 300ms;
     font-size: 18px;
