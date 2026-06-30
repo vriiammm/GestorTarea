@@ -3,18 +3,18 @@ import "./Nav.css";
 
 export default function Nav() {
     return (
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/">Inicio</Link>
+        <nav className="barra-navegacion">
+            <ul className="lista-enlaces">
+                <li className="item-enlace">
+                    <Link to="/" className="link-menu">Inicio</Link>
                 </li>
-                <li>
-                    <Link to="/formulario">Crear Tarea</Link>
+                <li className="item-enlace">
+                    <Link to="/formulario" className="link-menu">Crear Tarea</Link>
                 </li>
-                <li>
-                    <Link to="/listado">Listado</Link>
+                <li className="item-enlace">
+                    <Link to="/listado" className="link-menu">Listado</Link>
                 </li>
             </ul>
-        </nav>
+        </nav> 
     );
 }

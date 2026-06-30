@@ -1,0 +1,41 @@
+/* Contenedor principal de la barra */
+.barra-navegacion {
+    background-color: #1e1e24; /* Color de fondo oscuro y moderno */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Lista de los elementos (remueve los puntitos y alinea en fila) */
+.lista-enlaces {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra los elementos. Cambiar a flex-start si los querés a la izquierda */
+    gap: 2rem; /* Separación entre cada opción */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cada ítem de la lista */
+.item-enlace {
+    display: inline-block;
+}
+
+/* Estilos de los enlaces de Wouter */
+.link-menu {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+/* Efecto al pasar el mouse por encima */
+.link-menu:hover {
+    background-color: #3b82f6; /* Color azul destacado */
+    color: #ffffff;
+}
